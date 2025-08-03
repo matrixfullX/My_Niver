@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(#4f0074c9, #005e5ed3);
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 83px;
+
+        &__content {
+        max-width: 960px;
+        width: 100%;
+        text-align: center;
+        
+        border: 5px solid #ffffff;
+
+        .title {
+            margin-top: 50px;
+            font-size: 36px;
+            color: #fff;
+
+            @media (max-width: 425px) {
+                font-size: 28px;
+            }
+        }
+
+        .subtitle {
+            color: #fff;
+            margin-top: 100px;
+            margin-bottom: 24px;
+            font-size: 24px;
+            text-decoration: underline;
+
+            @media (max-width: 425px) {
+                font-size: 20px;
+            }
+        }
+
+        .informacao-aniversariante {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 100px;
+
+            @media (max-width: 425px) {
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 960px;
+            margin-top: -20px;
+        }
+        
+        @media (max-width: 768px) {
+            max-width: 700px;
+            margin-top: -70px;
+        }
+        
+        @media (max-width: 425px) {
+            max-width: 280px;
+            margin-top: -40px;
+            margin-bottom: 300px;
+        }
+    }
+}
